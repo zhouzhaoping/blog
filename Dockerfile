@@ -1,4 +1,4 @@
-FROM node:11.3-alpine
+FROM node:11.1.0-alpine
 
 RUN apk add --update --no-cache git
 RUN npm config set unsafe-perm true \
