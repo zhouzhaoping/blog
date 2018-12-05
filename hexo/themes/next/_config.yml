@@ -66,7 +66,7 @@ footer:
   icon:
     # Icon name in fontawesome, see: https://fontawesome.com/v4.7.0/icons
     # `heart` is recommended with animation in red (#ff0000).
-    name: user
+    name: heart
     # If you want to animate the icon, set it to true.
     animated: false
     # Change the color of icon, using Hex Code.
@@ -77,15 +77,15 @@ footer:
   # -------------------------------------------------------------
   powered:
     # Hexo link (Powered by Hexo).
-    enable: true
+    enable: false
     # Version info of Hexo after Hexo link (vX.X.X).
-    version: true
+    version: false
 
   theme:
     # Theme & scheme info link (Theme - NexT.scheme).
-    enable: true
+    enable: false
     # Version info of NexT after scheme info (vX.X.X).
-    version: true
+    version: false
   # -------------------------------------------------------------
   # Beian icp information for Chinese users. In China, every legal website should have a beian icp in website footer.
   # http://www.miitbeian.gov.cn
@@ -148,7 +148,7 @@ menu:
 # Enable/Disable menu icons / item badges.
 menu_settings:
   icons: true
-  badges: false
+  badges: true
 
 # ---------------------------------------------------------------
 # Scheme Settings
@@ -199,12 +199,12 @@ social_icons:
 github_banner: https://github.com/zhouzhaoping || Follow me on GitHub
 
 # Blog rolls
-links_icon: link
+links_icon: globe
 links_title: Links
-links_layout: block
-#links_layout: inline
-#links:
-  #Title: http://example.com
+#links_layout: block
+links_layout: inline
+links:
+  This blog: http://blog.zhouzhaoping.com
 
 # Sidebar Avatar
 avatar:
@@ -213,11 +213,11 @@ avatar:
   # You can also use other linking images.
   url: /images/avatar.jpg
   # If true, the avatar would be dispalyed in circle.
-  rounded: false
+  rounded: true
   # The value of opacity should be choose from 0 to 1 to set the opacity of the avatar.
   opacity: 1
   # If true, the avatar would be rotated with the cursor.
-  rotated: false
+  rotated: true
 
 # Table Of Contents in the Sidebar
 toc:
@@ -227,7 +227,7 @@ toc:
   number: true
 
   # If true, all words will placed on next lines if header width longer then sidebar width.
-  wrap: false
+  wrap: true
 
 sidebar:
   # Sidebar Position, available value: left | right (only for Pisces | Gemini).
@@ -254,10 +254,10 @@ sidebar:
   offset: 12
 
   # Back to top in sidebar (only for Pisces | Gemini).
-  b2t: false
+  b2t: true
 
   # Scroll percent label in b2t button.
-  scrollpercent: false
+  scrollpercent: true
 
   # Enable sidebar on narrow view (only for Muse | Mist).
   onmobile: false
@@ -268,7 +268,7 @@ sidebar:
 # ---------------------------------------------------------------
 
 # Automatically scroll page to section which is under <!-- more --> mark.
-scroll_to_more: true
+scroll_to_more: false
 
 # Automatically saving scroll position on each post/page in cookies.
 save_scroll: false
@@ -291,7 +291,7 @@ post_meta:
   item_text: true
   created_at: true
   updated_at:
-    enabled: true
+    enabled: false
     # If true, show updated date label only if `updated date` different from 'created date' (post edited in another day than was created).
     # And if post will edited in same day as created, edited time will show in popup title under created time label.
     # If false show anyway, but if post edited in same day, show only edited time.
@@ -327,10 +327,10 @@ codeblock:
 # If true, reward would be displayed in every article by default.
 # And you can show or hide one article specially through add page variable `reward: true/false`.
 reward:
-  enable: false
-  #comment: Donate comment here
-  #wechatpay: /images/wechatpay.jpg
-  #alipay: /images/alipay.jpg
+  enable: true
+  comment: Buy Me a Coffee
+  wechatpay: /images/wechatpay.png
+  alipay: /images/alipay.jpg
   #bitcoin: /images/bitcoin.png
 
 # Related popular posts
@@ -395,10 +395,10 @@ cheers_enabled: true
 # Arial | Tahoma | Helvetica | Times New Roman | Courier New | Verdana | Georgia | Palatino | Garamond | Comic Sans MS | Trebuchet MS
 # ---------------------------------------------------------------
 font:
-  enable: false
+  enable: true
 
   # Uri of fonts host. E.g. //fonts.googleapis.com (Default).
-  host:
+  host: https://fonts.cat.net
 
   # Font options:
   # `external: true` will load this font family from `host` above.
@@ -415,7 +415,7 @@ font:
   # Fallback to `global` font settings.
   headings:
     external: true
-    family:
+    family: Roboto Slab
     size:
 
   # Font settings for posts.
@@ -434,7 +434,7 @@ font:
   # Font settings for <code> and code blocks.
   codes:
     external: true
-    family:
+    family: Roboto Slab
     size:
 
 
@@ -780,8 +780,8 @@ note:
   #  - modern    bs-callout new (v2-v3) alert style.
   #  - flat      flat callout style with background, like on Mozilla or StackOverflow.
   #  - disabled  disable all CSS styles import of note tag.
-  style: simple
-  icons: false
+  style: flat
+  icons: true
   border_radius: 3
   # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
   # Offset also applied to label tag variables. This option can work with disabled note tag.
@@ -794,7 +794,7 @@ label: true
 tabs:
   enable: true
   transition:
-    tabs: false
+    tabs: true
     labels: true
   border_radius: 0
 

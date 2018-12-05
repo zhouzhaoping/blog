@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Zhou Zhaoping
-subtitle:
-description: The best time to pant a tree is twenty years ago. The second best time is now.
-keywords:
-author: Zhou Zhaoping
+title: Zhou Zhaoping's blog
+subtitle: 空谈误国，代码兴邦
+description: Zhou Zhaoping's blog
+keywords: technology,computer science,zhouzhaoping,blog,博客,周钊平,计算机,技术,科学
+author: fisher allan
 language: zh-Hans
 timezone:
 
@@ -15,7 +15,7 @@ timezone:
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://blog.zhouzhaoping.com
 root: /
-permalink: :title/
+permalink: :category/:title/
 permalink_defaults:
 
 # Directory
@@ -41,7 +41,7 @@ future: true
 highlight:
   enable: true
   line_number: true
-  auto_detect: false
+  auto_detect: true
   tab_replace:
   
 # Home page setting
