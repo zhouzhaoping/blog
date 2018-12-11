@@ -56,7 +56,15 @@ index_generator:
 # Category & Tag
 default_category: uncategorized
 category_map:
+  前端: frontend
+  后端: backend
+  中间件: middleware
+  架构: architecture
 tag_map:
+  前端: frontend
+  后端: backend
+  中间件: middleware
+  架构: architecture
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date

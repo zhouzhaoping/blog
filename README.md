@@ -10,9 +10,11 @@ docker run -it \
     hexo-docker \
     sh -c 'hexo init . && npm install && npm install hexo-deployer-git --save'
 ```
-
 ## Edit..
-in $work_path/hexo
+```bash
+cd $work_path/hexo
+hexo new "My New Post"
+```
 
 ## 本地gen
 ```bash

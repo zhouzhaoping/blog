@@ -1,8 +1,8 @@
 ---
 title: architect
 date: 2018-12-10 16:37:56
-tags: architect
-categories: architect
+tags: 架构
+categories: 架构
 ---
 ##架构 学习笔记
 1. 前端

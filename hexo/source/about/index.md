@@ -1,6 +1,56 @@
 ---
-title: about
-date: 2018-12-11 16:50:03
+title: 关于
+date: 2018-08-01 16:50:03
 type: "about"
 comments: false
 ---
+# Zhaoping Zhou（Fisher Allan）
+ - 周钊平
+
+# Personal
+ - male/1993 
+ - Github：[https://github.com/zhouzhaoping](https://github.com/zhouzhaoping)
+ 
+# Education
+- Peking University
+    - Master's Degree,Computer Software Engineering
+    - 2015~2018
+- Peking University
+    - Bachelor Degree,Computer Science
+    - 2011~2015
+
+# Research
+- General Game Playing
+    - GGP International Competition
+    - 2013~2014
+- LeakFix 
+    - "Safe Memory-Leak Fixing for C Programs" 37th International Conference on Software Engineering
+    - 2014~2016
+    
+# Experience
+- Sohu.com Ltd
+    - Development Engineer
+    - Jul,2018~now
+        - star8ker.com
+            - software architecture,backend development
+            - Jul,2018~Sep,2018
+        - Content Services
+            - performance optimization
+            - Oct,2018~Nov,2018
+ 
+# Skills & Endorsements
+- language：golang/java/c/c++/python
+- front-end：Bootstrap/Hexo
+- back-end：spring boot/nginx/zend framework
+- database：MySQL/Redis
+- machine learning: sklearn
+- version management, documentation：Svn/Git/markdown
+
+# Hobby
+- Soccer
+    - Runner-up of 2011 PKU Freshmen's Cup football tournament
+    - Champion of 2017 PKU Graduate Student's Cup football tournament
+    - Champion of 2017 PKU Cup football tournament
+- Table tennis
+    - Certificate Level 3 for PKU table tennis Athlete
+   
