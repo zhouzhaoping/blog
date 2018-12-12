@@ -526,9 +526,9 @@ changyan:
 # You can get your appid and appkey from https://leancloud.cn
 # more info please open https://valine.js.org
 valine:
-  enable: false # When enable is set to be true, leancloud_visitors is recommended to be closed for the re-initialization problem within different leancloud adk version.
-  appid:  # your leancloud application appid
-  appkey:  # your leancloud application appkey
+  enable: true # When enable is set to be true, leancloud_visitors is recommended to be closed for the re-initialization problem within different leancloud adk version.
+  appid: 8PQ4vhB4wiWrPJsJHyXRD8r9-gzGzoHsz # your leancloud application appid
+  appkey: aDqz7wnXqXkCFV73qMJCBqup # your leancloud application appkey
   notify: false # mail notifier , https://github.com/xCss/Valine/wiki
   verify: false # Verification code
   placeholder: Just go go # comment box placeholder
@@ -539,7 +539,7 @@ valine:
 
 # Support for LiveRe comments system.
 # You can get your uid from https://livere.com/insight/myCode (General web site)
-livere_uid: MTAyMC80MTYwMS8xODE0OA==
+#livere_uid: MTAyMC80MTYwMS8xODE0OA==
 
 # Gitment
 # Introduction: https://imsun.net/posts/gitment-introduction
