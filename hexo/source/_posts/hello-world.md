@@ -1,47 +1,33 @@
 ---
 title: Hello World
-tags: 前端
+date: 2018-12-12 16:36:41
+tags: 日记
 categories: 
-- 前端
+- 日记
 ---
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
+这里是我的第一篇博客，从今天开始我会坚持多读书，多分享。
 
-## Quick Start
+<!-- more -->
 
-### Create a new post
+## 起因
+作为程序员，经常因为各种坑上网搜索，所以会查阅大量的技术博客。由于计算机行业相对开放，各种资料、开源代码、社区应有尽有，每天都在经历各种知识输入的我也萌发了写博客的计划。  
+其实很早也算是有博客的，13年的时候大三选修过web技术概论，几乎每星期掌握一门语言，html、javascript、perl、css、php等都纯手写撸了一遍，当时还比较年轻没有用任何框架。该课号称是我系有名的函授课程，上课的方式就是每周在课程网站上挂资料，让大家去自学并完成作业，唯一一次见到任课老师是期末笔试的时候。时间紧同时任务量大所以感觉非常累，让我对前端产生了深深的心理阴影。而且其中所用的上古技术大多都不流行了，唯一的收获是了解了web开发的历史。但我们还是要警惕热闹型驱动的开发（Hype Driven Development，HDD），以史为鉴，享受经典的美。  
+后来接触了github挂载静态网站的建站方式，不需要买域名（赠送github.io下的二级域名）也不需要租服务器（静态文件直接丢github的仓库里），让我这个穷学生感到异常激动，于是把web技术概论上做的挫主页挂到了github上。从14年3月建站至今都没有继续改动，感兴趣的可以去这里瞧瞧[https://zhouzhaoping.github.io](https://zhouzhaoping.github.io/)
 
-``` bash
-$ hexo new "My New Post"
-```
+## 动手
+作为技术派，自己比较喜欢用markdown来做笔记，这样我有更多的时间可以关注内容，而不是纠结于排版和格式。甚至于求职的简历我都是用markdown完成的，尽管做了很多排版上的优化，还是稍微有点朴素，这被不懂技术的hr喷过多次。然而我并不在意，因为找工作的过程其实就是在互相选择的过程，我也没必要迁就被花花绿绿简历提高阈值的hr。  
+那么能不能用markdown来做博客呢？当前流行的支持markdown语法的静态博客框架有基于NodeJs的Hexo和基于Ruby的Jekyll，在看了一圈之后发现Hexo更好看，于是就折腾各种配置，最终有了这个博客。  
+同时又恰逢[godaddy](https://godaddy.com/)打折，于是屯了一个自己姓名的.com域名，服务器用的是好早之前买的用来翻墙的[搬瓦工](https://bwh1.net)服务器，512MB的内存和11GB的存储空间，性能有点堪忧。
 
-More info: [Writing](https://hexo.io/docs/writing.html)
+## 名字来源
+Linus说过：
+    
+    Talk is cheap. Show me the code
+我在网上看到一个有意思的翻译：
 
-### Create a new page
+    空谈误国，代码兴邦
+于是想到了马兴邦这个笔名，上网一搜，没想到确有其人。于是退而求其次，**码兴邦**这个博客名就这么来了。
 
-``` bash
-$ hexo new page about/categoties
-```
-
-### Run server
-
-``` bash
-$ hexo server
-```
-
-More info: [Server](https://hexo.io/docs/server.html)
-
-### Generate static files
-
-``` bash
-$ hexo generate
-```
-
-More info: [Generating](https://hexo.io/docs/generating.html)
-
-### Deploy to remote sites
-
-``` bash
-$ hexo deploy
-```
-
-More info: [Deployment](https://hexo.io/docs/deployment.html)
+## 后续计划
+后续会继续在这里做技术分享，把所读所做所想都做一个总结。有机会会和其它平台的博客进行同步。  
+希望有志同道合的朋友能一起鼓励，进步~

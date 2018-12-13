@@ -4,7 +4,12 @@ date: 2018-12-10 16:37:56
 tags: 架构
 categories: 架构
 ---
-##架构 学习笔记
+这里是一些简单的笔记，主要是为了构建知识体系以及方便查找，以后会分点详细撰文。
+
+<!-- more -->
+
+## 架构学习笔记
+
 1. 前端
 	1. HTML/CSS/JavaScript
 	2. 框架：Vue、Backbone、jQuery、LESS

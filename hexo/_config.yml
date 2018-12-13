@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Zhou Zhaoping's blog
+title: 码兴邦
 subtitle: 空谈误国，代码兴邦
 description: Zhou Zhaoping's blog
 keywords: technology,computer science,zhouzhaoping,blog,博客,周钊平,计算机,技术,科学
@@ -56,15 +56,17 @@ index_generator:
 # Category & Tag
 default_category: uncategorized
 category_map:
-  前端: frontend
-  后端: backend
-  中间件: middleware
-  架构: architecture
+  日记: Diary
+  前端: Frontend
+  后端: Backend
+  中间件: Middleware
+  架构: Architecture
 tag_map:
-  前端: frontend
-  后端: backend
-  中间件: middleware
-  架构: architecture
+  日记: Diary
+  前端: Frontend
+  后端: Backend
+  中间件: Middleware
+  架构: Architecture
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
