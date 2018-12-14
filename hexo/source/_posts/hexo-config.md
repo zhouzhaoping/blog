@@ -527,8 +527,8 @@ rating:
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
   enable: true
-  app_id: 8PQ4vhB4wiWrPJsJHyXRD8r9-gzGzoHsz #<app_id>
-  app_key: aDqz7wnXqXkCFV73qMJCBqup #<app_key>
+  app_id: XXX #<app_id>
+  app_key: XXX #<app_key>
   # Dependencies: https://github.com/theme-next/hexo-leancloud-counter-security
   # If you don't care about security in lc counter and just want to use it directly
   # (without hexo-leancloud-counter-security plugin), set the `security` to `false`.
@@ -546,5 +546,17 @@ site:blog.zhouzhaoping.com
 ```yaml
 # Baidu Webmaster tools verification setting
 # See: https://ziyuan.baidu.com/site
-baidu_site_verification: 7wM8bLS5R4
+baidu_site_verification: XXXXX
+```
+### 添加站点地图
+```bash
+npm install hexo-generator-sitemap --save
+npm install hexo-generator-baidu-sitemap --save
+```
+在博客的站点配置文件_config.yml中添加以下代码
+```yaml
+sitemap:
+path: sitemap.xml
+baidusitemap:
+path: baidusitemap.xml
 ```
