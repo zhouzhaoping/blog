@@ -2,6 +2,7 @@
 title: 十分钟hexo装进docker
 date: 2018-12-13 15:49:02
 tags: 前端
+categories: 前端
 ---
 作为一个业余前端，为了写博客，只想关注内容而不是复杂的node环境和nmp依赖，因此把hexo装进docker成为了最好的选择。
 
