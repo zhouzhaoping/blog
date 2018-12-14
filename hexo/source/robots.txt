@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+Allow: /archives/
+Allow: /tags/
+Allow: /about/
+Allow: /categories/
+
+Disallow: /vendors/
+Disallow: /js/
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /vendors/
+Disallow: /fancybox/
+
+Sitemap: http://blog.zhouzhaoping.com/sitemap.xml
+Sitemap: http://blog.zhouzhaoping.com/baidusitemap.xml

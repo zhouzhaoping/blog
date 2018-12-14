@@ -560,3 +560,67 @@ path: sitemap.xml
 baidusitemap:
 path: baidusitemap.xml
 ```
+`hexo g`之后就能看到`sitemap.xml`和`baidusitemap.xml`  
+到[https://ziyuan.baidu.com/linksubmit](https://ziyuan.baidu.com/linksubmit)提交百度sitemap  
+到[https://www.google.com/webmasters/tools/sitemap-list](https://www.google.com/webmasters/tools/sitemap-list)提交谷歌sitemap
+### 添加蜘蛛协议
+在站点source文件夹下新建`robots.txt`文件
+```text
+User-agent: *
+Allow: /
+Allow: /archives/
+Allow: /tags/
+Allow: /about/
+Allow: /categories/
+
+Disallow: /vendors/
+Disallow: /js/
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /vendors/
+Disallow: /fancybox/
+
+Sitemap: http://blog.zhouzhaoping.com/sitemap.xml
+Sitemap: http://blog.zhouzhaoping.com/baidusitemap.xml
+```
+到[https://ziyuan.baidu.com/robots](https://ziyuan.baidu.com/robots)检测robots  
+到[https://www.google.com/webmasters/tools/robots-testing-tool](https://www.google.com/webmasters/tools/robots-testing-tool)检测谷歌robots
+### 其它配置
+修改主题配置中的
+```yaml
+# ---------------------------------------------------------------
+# SEO Settings
+# ---------------------------------------------------------------
+
+# Canonical, set a canonical link tag in your hexo, you could use it for your SEO of blog.
+# See: https://support.google.com/webmasters/answer/139066
+# Tips: Before you open this tag, remember set up your URL in hexo _config.yml ( ex. url: http://yourdomain.com )
+canonical: true
+
+# Change headers hierarchy on site-subtitle (will be main site description) and on all post/pages titles for better SEO-optimization.
+seo: true
+
+# If true, will add site-subtitle to index page, added in main hexo config.
+# subtitle: Subtitle
+index_with_subtitle: true
+
+# Automatically add external URL with BASE64 encrypt & decrypt.
+exturl: true
+```
+
+## 百度统计
+修改站点配置中的百度分析id
+```yaml
+# Baidu Analytics ID
+baidu_analytics:
+```
+id即[https://tongji.baidu.com](https://tongji.baidu.com)里代码管理部分如下的XXXXX
+```javascript
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?XXXXX";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+```
