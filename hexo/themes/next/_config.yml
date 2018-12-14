@@ -138,6 +138,7 @@ exturl: true
 menu:
   home: / || home
   about: /about/ || user
+  thinking: /thinking/ || think-peaks
   tags: /tags/ || tags
   categories: /categories/ || th
   archives: /archives/ || archive
