@@ -1,0 +1,105 @@
+---
+title: 一天搞懂深度学习
+date: 2018-12-17 01:05:13
+tags:
+- 笔记
+- 机器学习
+categories: 机器学习
+---
+
+源自于李宏毅的一天搞懂深度学习slides
+<!-- more -->
+
+## I:Introduction of Deep Learning
+- Framework
+	- A set of function
+		- Neuron:weights,bias,activation function(sigmoid)
+		- Layer:input,hidden,output(softmax)
+	- Goodness of function f
+		- Loss:distance between the network output and target
+		- find the network parameters that minimize total loss
+	- Pick the best function
+		- Gradient Descent: Backpropagation: an efficient way to compute <img src="http://latex.codecogs.com/gif.latex?\Delta L/\Delta W"/>相当于把求偏导的路径进行了去重优化
+- why deep
+	- more parameters, better performance
+	- any function can be realized by one single hidden layer
+	- deep->modularization->less training data
+
+## II:Tips for Training DNN
+- Choosing proper loss
+	- square error vs cross entropy
+	- when using softmax output layer, choose cross entropy
+
+- Mini-batch:faster
+
+- New activation function
+	- vanishing gradient problem
+	- ReLU
+	- Maxout:ReLU is a special cases of Maxout
+
+- Adaptive learning rate
+	- Adagrad
+	<br><img src="http://latex.codecogs.com/gif.latex?\eta_w=\frac\eta{\sqrt {\sum_{i=0}^t(g^i)^2}}"/>g<sup>i</sup>是第i次更新获得的梯度
+	- RMSprop,Adadelta,AdaSecant,Adam,Nadam
+- Momentum
+	- Adam:RMSProp+Momentum
+- Handling overfitting
+	- more training data:create training data,add noise
+	- Early stopping
+		- 即在每一个epoch结束时（一个epoch即对所有训练数据的一轮遍历）计算 validation data的accuracy，当accuracy不再提高时，就停止训练
+	- Weight Decay
+		- 避免网络过拟合
+	- Dropout
+		- Each neuron has p% to dropout
+		- no dropout in testing, weights timess 1-p
+
+## III:Variants of Neural Networks
+- CNN
+	- connecting to small region with less parameters
+	- for image:same patterns,subsampling will not change the object
+	- step:(concolution->maxpooling)+->flatten->fully  connected feedforward network
+- RNN
+	- the output of hidden layer are stored in the memory.
+	- memory can be considered as another input.
+	- Bidirectional RNN:利用上下文信息
+- LSTM
+- CNN是空间上的深度网络,RNN是时间上的深度网络
+
+## IV:Next Wave
+- Supervised Learning
+	- Ultral Deep Network
+	- Attention model
+		- 自然语言处理中经常使用
+- Reinforcement Learning
+- Unsupervised Learning
+	- image:realizing what the world looks like
+		- auto-encoder
+	- text:understanding the meaning of words
+		- word vector
+	- audio:learning human language without supervision
+
+## 补充
+- 激活函数类型以及优缺点
+	- sigmoid：容易饱和，梯度消失；非零均值
+	- tanh：tanh(x)=2σ(2x)−1，均值
+	- relu：f(x)=max(0,x)，收敛速度快，求导方便；负梯度容易坏死
+	- leaky relu：f(x)=1(x<0)(ax)+1(x>=0)(x)，小于零时不再坏死
+	- prelu：a值可学习
+	- softmax：多分类，可求导
+	- maxout：更加宽泛的激活函数
+- 损失函数选择
+	- 均方差+Sigmoid：反向中，每一层向前递推都要乘以σ′(z)，收敛速度慢
+	- 交叉熵损失函数+Sigmoid：得到的的δl梯度表达式没有了σ′(z)
+	- 对数似然损失函数+softmax：多分类
+- 防止过拟合
+	- more training data：噪声，重采样
+	- early stop
+	- dropout
+	- weight declay：相当于正则化
+- 梯度下降
+	- 随机梯度下降，minibatch
+	- 牛顿法：二阶收敛快，但是每一步都要求hessian矩阵比较慢
+	- 拟牛顿法：用正定矩阵近似hessian矩阵的逆
+	- 共轭梯度
+	- 启发式优化
+	- 拉格朗日乘数
