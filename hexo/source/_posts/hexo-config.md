@@ -624,3 +624,21 @@ var _hmt = _hmt || [];
   s.parentNode.insertBefore(hm, s);
 })();
 ```
+
+## 图片使用
+### 公式图片
+在markdown里面直接加上如下的一段
+```html
+<br><img src="http://latex.codecogs.com/gif.latex?J(\theta)=\frac1{2m}(X\theta-Y)^T(X\theta-Y)=\frac1{2m}(\theta^TX^T-Y^T)(X\theta-Y)"/>
+```
+### 图床-github
+也可以选择github的issue作为图床
+1. 创建一个新issue
+2. 拖拽上传图片，一次可以上传多张
+2. 上传完 issue 之后，就可以直接在图片上右键复制图片URL
+
+### 图床-七牛云
+选择七牛云图床，实名认证后有10G免费空间。一般3个工作日内会审批  
+1. 打开对象存储，新建存储空间
+2. 点开刚才新建的空间，在内容管理里上传文件
+3. 把外链域名粘贴到markdown里
