@@ -3,7 +3,8 @@ title: Spring Data Redis序列化深坑
 date: 2018-12-17 11:07:15
 tags:
 - 后端
-- spring
+- Spring
+- Codis
 categories: Backend
 ---
 

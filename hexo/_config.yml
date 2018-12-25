@@ -71,6 +71,9 @@ tag_map:
   机器学习: MachineLearning
   笔记: Note
   Spring: Spring
+  Golang: Golang
+  Codis: Codis
+  Eureka: Eureka
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
