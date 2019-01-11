@@ -72,8 +72,9 @@ tag_map:
   笔记: Note
   Spring: Spring
   Golang: Golang
-  Codis: Codis
+  KV: KV
   Eureka: Eureka
+  K8s: K8s
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date

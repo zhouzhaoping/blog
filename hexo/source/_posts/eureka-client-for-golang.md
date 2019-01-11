@@ -36,7 +36,8 @@ categories: Backend
 ### Eureka Client for Provider
 1. Register：服务启动后发送json格式的注册信息
 2. Renew：每三十秒发送一次心跳
-3. Cancel：服务结束后发送取消信息
+3. Cancel：服务结束后发送取消信息  
+
 ### Eureka Client for Consumer
 1. Fetch Registries：向服务中心查看可用的服务（spring里真正的实现有缓存机制和增量查询）  
 
@@ -45,12 +46,17 @@ categories: Backend
 ## 设计细节
 根据官方的wiki，能够完成基本的网络交互，但是一些细节并没有给出，需要在源码里仔细阅读并实现。主要是Eureka Client for Consumer的例如多个服务中心的选择，多个服务的选择，缓存的设计。
 
-### 缓存
-eureka
-### 重试
-我们知道client会在后面的生命周期中注册，保持心跳，更新状态信息以及注销自身。在装载所有server url之后，client会打乱顺序，并且将自身zone的所在的url排到数组的前面，每一次进行网络请求，都选取第一个地址，如果失败就顺次尝试。
+### 缓存与更新
+查看eureka的源码，发现client端的服务列表是有缓存机制和增量更新的，每3min进行一次服务列表的更新。  
+而在具体实现里我只实现了缓存机制，并没有考虑增量更新。
 
-同时client有一种隔离机制，对于网络通信错误的url，会进入隔离区，下次进行通信不会使用。但这种隔离并不是永久的，当达到某一个阈值后，这个隔离区会清空。
+### 重试
+我们知道client会在后面的生命周期中注册，保持心跳，更新状态信息以及注销自身。通过阅读源码，发现在装载所有server url之后，client会打乱顺序，并且将自身zone的所在的url排到数组的前面，每一次进行网络请求，都选取第一个地址，如果失败就顺次尝试。  
+同时client有一种隔离机制，对于网络通信错误的url，会进入隔离区，下次进行通信不会使用。但这种隔离并不是永久的，当达到某一个阈值后，这个隔离区会清空。  
+而在具体实现里我只实现了顺次尝试，后续可以考虑网络延时的概率优化（比如提高延时比较低的eureka server的选择概率），我觉得这个策略可能比顺次尝试+隔离的策略要好一些，主要浪费时间的点是概率的计算。
+
+### 负载均衡
+eureka的服务发现中所实现的负载均衡是在client端完成的，具体使用了ribbon算法，简单来说其实就是轮询策略，每次选择下一个服务器。在我这边的具体实现变成了RandomRule随机策略。
 
 ## 代码
 具体代码可以到github上查看[https://github.com/zhouzhaoping/eurekaclient](https://github.com/zhouzhaoping/eurekaclient)

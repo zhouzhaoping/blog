@@ -1,8 +1,14 @@
 ---
 title: redis使用tips
 date: 2018-12-20 15:52:25
-tags:
+tags: 
+- 后端
+- KV
+- K8s
+categories: Backend
 ---
+这是redis使用时的一些tips，包括一个查找所有不过期数据简单脚本，方便彻查redis不规范的使用方法。
+<!-- more -->
 ## 登陆
 ```bash
 redis-cli -h your_ip -p your_port -a your_password
@@ -11,7 +17,7 @@ redis-cli -h your_ip -p your_port -a your_password
 ```bash
 scan 0 match yourkey_pre*
 ttl key
-keys yourkey_pre
+keys yourkey_pre*
 ```
 
 ## 查找ttl=-1的key
