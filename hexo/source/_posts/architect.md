@@ -66,6 +66,16 @@ categories: 架构
 		3. maven:xml,给每个包都标上坐标，这样，便于在仓库里进行查找
 		4. gradle:groovy,构建任务添加log
 4. 基础架构
+    1. 指标
+        1. RPS(Requests Per Second)：系统在单位时间内（每秒）处理请求的数量。  
+        2. QPS(Query Per Second)：是指在一定并发度下，服务器每秒可以处理的最大请求数。
+        3. 服务器平均请求处理时间 = 1/QPS（秒）
+        4. 平均等待时间 = 1/(QPS/并发度) = 并发度/QPS（秒）。
+    2. 对策
+        1. 百RPS——升级机器配置
+        2. 千RPS——各组件拆分并优化
+        3. 万RPS——水平扩展
+        4. 十万、百万、千万RPS——终极拆分及扩展
 5. 其他
 	1. 热闹驱动开发（Hype Driven Development，HDD）
 	2. gossip as a service

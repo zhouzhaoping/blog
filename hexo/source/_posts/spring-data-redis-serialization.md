@@ -193,5 +193,26 @@ public class RedisConf {
 ### 线上数据清洗
 由于线上数据有两套codis A和B，我们先把所有服务都使用A，然后清洗B中的数据，然后用修改后的服务连接B。最后我们把旧的服务全下线，清洗A，再上线新服务连接A。  
 这样就实现了清洗数据时服务的无缝切换。
-
+### 其它项目使用错误数据
+如果线上数据来不及清洗，同时其它java项目需要读取当前线上的错误数据，那么可以把读出来的数据进行一次反序列化处理。代码如下：
+```java
+private static Object unserialize(byte[] bytes) {
+    ByteArrayInputStream bais = null;
+    try {
+        // 反序列化
+        bais = new ByteArrayInputStream(bytes);
+        ObjectInputStream ois = new ObjectInputStream(bais);
+        return ois.readObject();
+    } catch (Exception e) {
+        logger.error("{}", e);
+    } finally {
+        try {
+            bais.close();
+        } catch (IOException e) {
+            logger.error("{}", e);
+        }
+    }
+    return null;
+}
+```
 

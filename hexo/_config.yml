@@ -62,6 +62,8 @@ category_map:
   中间件: Middleware
   架构: Architecture
   机器学习: MachineLearning
+  宏观: Macroeconomics
+  版本管理: Version-control
 tag_map:
   日记: Diary
   前端: Frontend
@@ -70,6 +72,7 @@ tag_map:
   架构: Architecture
   机器学习: MachineLearning
   笔记: Note
+  宏观: Macroeconomics
   Spring: Spring
   Golang: Golang
   KV: KV
