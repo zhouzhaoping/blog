@@ -38,6 +38,9 @@ comments: false
         - Content Services
             - performance optimization
             - Oct,2018~Nov,2018
+        - 推荐引擎Kaleidoscope
+            - Service Integration
+            - Dec,2018~now
  
 # Skills & Endorsements
 - language：golang/java/c/c++/python
@@ -54,4 +57,3 @@ comments: false
     - Champion of 2017 PKU Cup football tournament
 - Table tennis
     - Certificate Level 3 for PKU table tennis Athlete
-   

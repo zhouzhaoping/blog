@@ -1,7 +1,7 @@
 ---
 title: git使用技巧
 date: 2019-01-17 17:02:37
-tags: 
+tags: Git
 categories: Version-control
 ---
 这是git使用时的一些tips，方便日后查询。
@@ -28,3 +28,6 @@ $ git merge dev
 ```bash
 $ git branch -d dev
 ```
+
+## 自学git命令的网站
+[https://learngitbranching.js.org/](https://learngitbranching.js.org/)

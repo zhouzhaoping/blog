@@ -64,6 +64,7 @@ category_map:
   机器学习: MachineLearning
   宏观: Macroeconomics
   版本管理: Version-control
+  笔记: Note
 tag_map:
   日记: Diary
   前端: Frontend
@@ -78,6 +79,8 @@ tag_map:
   KV: KV
   Eureka: Eureka
   K8s: K8s
+  Git: Git
+  Python: Python
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
