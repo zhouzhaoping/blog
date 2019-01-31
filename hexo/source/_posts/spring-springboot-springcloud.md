@@ -4,7 +4,7 @@ date: 2018-12-27 17:16:49
 tags: Spring
 categories: 后端
 ---
-Spring框架是java后端开发的杀手级应用，当初刚接触后端开发的时候，Spring/SpringMVC/SpringBoot/SpringCloud等概念傻傻分不清楚。下面用理论加实践的方式对Spring的家族进行研究。
+Spring框架是java后端开发的杀手级应用，当初刚接触后端开发的时候，对Spring/SpringMVC/SpringBoot/SpringCloud等概念傻傻分不清楚。下面用理论加实践的方式对Spring的家族进行研究。
 
 <!-- more -->
 
@@ -91,6 +91,6 @@ Spring系列经过发展之后，产品变多，为了简化spring作为基础�
 
 ## Spring Cloud
 spring-colud是一种云端分布式架构解决方案，基于spring boot,在spring boot做较少的配置，便可成为 spring cloud 中的一个微服务。  
-关系：SpringCloud是一个基于 Spring Boot实现的云应用开发工具; Spring Boot专注于快速、方便集成的单个微服务个体，Spring Cloud关注全局的服务治理框架; 
+**关系**：SpringCloud是一个基于 Spring Boot实现的云应用开发工具; Spring Boot专注于快速、方便集成的单个微服务个体，Spring Cloud关注全局的服务治理框架。
 
 Spring IOC/AOP > Spring > Spring Boot > Spring Cloud
