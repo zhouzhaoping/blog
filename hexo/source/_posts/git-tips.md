@@ -28,6 +28,9 @@ $ git merge dev
 ```bash
 $ git branch -d dev
 ```
-
+删除不小心add的文件
+```bash
+git rm --cached path/to/file
+```
 ## 自学git命令的网站
 [https://learngitbranching.js.org/](https://learngitbranching.js.org/)

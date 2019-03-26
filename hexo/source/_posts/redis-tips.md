@@ -9,6 +9,7 @@ categories: Backend
 ---
 这是redis使用时的一些tips，包括一个查找所有不过期数据简单脚本，方便彻查redis不规范的使用方法。
 <!-- more -->
+
 ## 不同模式
 1. 单点模式：一个实例。
 2. 主从模式（master/slaver）：
@@ -26,6 +27,9 @@ categories: Backend
 - RDB：在指定的时间间隔内生成数据集的时间点快照（point-in-time snapshot）。dump.rdb
 - AOF：记录服务器执行的所有写操作命令，并在服务器启动时，通过重新执行这些命令来还原数据集。 
 
+## Proxy
+1. Codis
+2. Twemproxy
 ## 登陆
 ```bash
 redis-cli -h your_ip -p your_port -a your_password
@@ -68,6 +72,7 @@ for slot in range(1024):
 yum  install python-devel
 pip install rdbtools python-lzf
 ```
+### 寻找大key
 使用redis的dump备份做数据分析，以免影响线上服务
 ```bash
 redis-cli -c -h 10.18.36.141 -p 6390 -a 35ff9e22 --rdb ~/dump.rdb // 把dump.rdb文件下载到本地
