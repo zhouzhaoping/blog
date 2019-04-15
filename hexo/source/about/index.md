@@ -11,6 +11,7 @@ comments: false
  - male/1993 
  - Github：[https://github.com/zhouzhaoping](https://github.com/zhouzhaoping)
  - Mail：[zhouzhaoping11@gmail.com](mailto:zhouzhaoping11@gmail.com)
+ - 兴趣：系统设计，中间件，机器学习，宏观经济
  
 # Education
 - Peking University
@@ -41,6 +42,9 @@ comments: false
         - 推荐引擎Kaleidoscope
             - Service Integration
             - Dec,2018~now
+        - 文章中台存储KV系统Trove
+            - 系统设计+实现+部署+调优
+            - Mar,2019~now
  
 # Skills & Endorsements
 - language：golang/java/c/c++/python
