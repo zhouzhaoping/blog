@@ -14,12 +14,14 @@ categories: Competition
 ## 梳理产品需求
 ### 灵感
 灵感来源于生活，最近的热点事件经常发生反转。在这个信息大爆炸的时代，假如我们没有对一个事件进行每天的追踪，就很有可能导致跟不上事件的进度，无法对事件的起源、经过、反转有一个全局的视角。  
+
 ### 竞品
 我们对一个名为“后续”的app惊醒了竞品分析，发现如下的问题：
 1. 内容同质：本质只是内容聚合
 2. 逻辑缺失：时间线仅是文章发布的时间线
 3. 人工干预：事件线索由人工梳理
 4. 本质问题：技术瓶颈
+
 ### 产品定位
 定位：利用机器从海量文本中挖掘事件相关新闻并结合事件发生的先后逻辑进行时间线梳理的资讯类产品  
 应用场景：在选定事件后对其进行追溯及跟踪  
@@ -120,7 +122,8 @@ NLP这一块由于没有系统学习过，好多名词都看不太懂，在做�
 一个人一天的demo和一个真正落地的线上系统有着本质的差异，这是两种完全不同的状态，hackaton可以用很简单粗狂的模式进行开发，但是后者却不可能。感谢这一天时光，让一个迷茫的后端工程师对算法又重燃了兴趣。  
 在马拉松当天，Keras的作者François Chollet恰巧发了一个推：
 ```
-"90% of the time, when an engineer (or researcher) uses X to solve Y, it's a case of "I kind of know X" rather than "I have evidence that X is an appropriate solution in this case"
+90% of the time, when an engineer (or researcher) uses X to solve Y, 
+it's a case of "I kind of know X" rather than "I have evidence that X is an appropriate solution in this case
 ```
 大致就是说大部分工程师只是手上有锤子，看见任何类似钉子的东西都想锤一下。假使我们的武器库不够丰富，能做的事情就慢慢出现了局限性。多做，多思考，多总结，要走的路还很长。
 
