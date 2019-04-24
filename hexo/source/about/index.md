@@ -11,7 +11,7 @@ comments: false
  - male/1993 
  - Github：[https://github.com/zhouzhaoping](https://github.com/zhouzhaoping)
  - Mail：[zhouzhaoping11@gmail.com](mailto:zhouzhaoping11@gmail.com)
- - 兴趣：系统设计，中间件，机器学习，宏观经济
+ - 兴趣：系统设计，中间件，机器学习，宏观经济，量化交易
  
 # Education
 - Peking University
@@ -49,8 +49,8 @@ comments: false
 # Skills & Endorsements
 - language：golang/java/c/c++/python
 - front-end：Bootstrap/Hexo
-- back-end：spring boot/nginx/zend framework
-- database：MySQL/Redis
+- back-end：grpc/spring boot/nginx/zend framework
+- database：MySQL/Redis/Codis
 - machine learning: sklearn
 - version management, documentation：Svn/Git/markdown
 

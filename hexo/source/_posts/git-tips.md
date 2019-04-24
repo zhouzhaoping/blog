@@ -32,5 +32,11 @@ $ git branch -d dev
 ```bash
 git rm --cached path/to/file
 ```
+
+## 改变最近一次提交
+```bash
+git commit --amend
+``` 
+
 ## 自学git命令的网站
 [https://learngitbranching.js.org/](https://learngitbranching.js.org/)
