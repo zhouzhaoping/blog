@@ -1,11 +1,12 @@
 ---
 title: redis笔记
+urlname: redis-tips
 date: 2018-12-20 15:52:25
 tags: 
 - 后端
 - KV
 - K8s
-categories: Backend
+categories: 后端
 ---
 这是redis使用时的一些tips，包括一个查找所有不过期数据简单脚本，方便彻查redis不规范的使用方法。
 <!-- more -->
@@ -30,6 +31,7 @@ categories: Backend
 ## Proxy
 1. Codis
 2. Twemproxy
+
 ## 登陆
 ```bash
 redis-cli -h your_ip -p your_port -a your_password

@@ -1,8 +1,9 @@
 ---
 title: git使用技巧
+urlname: git-tips
 date: 2019-01-17 17:02:37
 tags: Git
-categories: Version-control
+categories: 版本管理
 ---
 这是git使用时的一些tips，方便日后查询。
 <!-- more -->

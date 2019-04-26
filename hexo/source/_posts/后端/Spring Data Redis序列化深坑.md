@@ -1,11 +1,12 @@
 ---
 title: Spring Data Redis序列化深坑
+urlname: spring-data-redis-serialization
 date: 2018-12-17 11:07:15
 tags:
 - 后端
 - Spring
 - Codis
-categories: Backend
+categories: 后端
 ---
 
 最近在给公司的内容服务做性能优化，发现了spring data redis中的一个序列化深坑，导致codis集群里保存的kv数据都多进行了一次序列化，存储空间和服务响应时间都被白白增加。查看了源码和文档之后才理清楚。

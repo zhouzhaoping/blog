@@ -1,5 +1,6 @@
 ---
 title: Python笔记
+urlname: python-note
 date: 2019-01-28 11:06:18
 tags: 
 - Python

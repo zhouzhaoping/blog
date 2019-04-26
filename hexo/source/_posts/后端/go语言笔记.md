@@ -1,15 +1,16 @@
 ---
-title: Golang-tips
+title: Go语言笔记
+urlname: golang-tips
 date: 2019-04-18 14:37:52
 tags:
 - 后端
 - Golang
-categories: Backend
+categories: 后端
 ---
 这是Golang使用时的一些tips。
 <!-- more -->
 
-## init
+## init函数
 1. init()函数会在每个包完成初始化后自动执行，并且执行优先级比main函数高。
 2. golang包初始化：
     1. 初始化导入的包（递归导入）
@@ -22,6 +23,4 @@ categories: Backend
 import _ "image/png"
 ```
 
-## 日志
-spring生产环境中使用logback作为日志模块，golang里有没有对应的包能提供类似的日志分割的功能呢？找到一个logrus，https://www.jishuwen.com/d/2Ek8
 

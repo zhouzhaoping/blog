@@ -1,5 +1,6 @@
 ---
 title: 十分钟hexo装进docker
+urlname: docker-hexo
 date: 2018-12-13 15:49:02
 tags: 前端
 categories: 前端

@@ -1,5 +1,6 @@
 ---
 title: Hello World
+urlname: hello-world
 date: 2018-12-12 16:36:41
 tags: 日记
 categories: 

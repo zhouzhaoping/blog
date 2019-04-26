@@ -1,5 +1,6 @@
 ---
 title: hexo进阶——配置优化及插件使用
+urlname: hexo-config
 date: 2018-12-14 11:25:43
 tags: 前端
 categories: 前端
@@ -36,7 +37,7 @@ timezone:
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://blog.zhouzhaoping.com
 root: /
-permalink: :category/:title/
+permalink: :category/:urlname/
 permalink_defaults:
 
 # Directory
@@ -62,7 +63,7 @@ future: true
 highlight:
   enable: true
   line_number: true
-  auto_detect: true
+  auto_detect: false
   tab_replace:
   
 # Home page setting
