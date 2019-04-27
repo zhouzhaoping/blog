@@ -2,7 +2,9 @@
 title: git使用技巧
 urlname: git-tips
 date: 2019-01-17 17:02:37
-tags: Git
+tags: 
+- Git
+- 笔记
 categories: 版本管理
 ---
 这是git使用时的一些tips，方便日后查询。
@@ -29,7 +31,8 @@ $ git merge dev
 ```bash
 $ git branch -d dev
 ```
-删除不小心add的文件
+
+## 删除不小心add的文件
 ```bash
 git rm --cached path/to/file
 ```
@@ -38,6 +41,11 @@ git rm --cached path/to/file
 ```bash
 git commit --amend
 ``` 
+
+## Git pull 强制覆盖本地文件
+git fetch --all   
+git reset --hard origin/master   
+git pull
 
 ## 自学git命令的网站
 [https://learngitbranching.js.org/](https://learngitbranching.js.org/)

@@ -5,6 +5,7 @@ date: 2019-04-18 14:37:52
 tags:
 - 后端
 - Golang
+- 笔记
 categories: 后端
 ---
 这是Golang使用时的一些tips。
