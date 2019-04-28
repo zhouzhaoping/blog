@@ -67,6 +67,8 @@ category_map:
   版本管理: Version-control
   笔记: Note
   比赛: Competition
+  工具: Tools
+
 tag_map:
   日记: Diary
   前端: Frontend
@@ -74,18 +76,25 @@ tag_map:
   中间件: Middleware
   架构: Architecture
   机器学习: MachineLearning
-  笔记: Note
   宏观: Macroeconomics
   经济: Economics
+  版本管理: Version-control
+  笔记: Note
+  比赛: Competition
+  工具: Tools
   读后感: Book-review
   黑客马拉松: Hackaton
+  个人网站: Personal-Website
+  教程: Course
   Spring: Spring
   Golang: Golang
   KV: KV
   Eureka: Eureka
   K8s: K8s
+  Docker: Docker
   Git: Git
   Python: Python
+  Nginx: Nginx
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date

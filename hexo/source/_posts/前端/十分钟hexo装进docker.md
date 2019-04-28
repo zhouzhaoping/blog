@@ -2,7 +2,11 @@
 title: 十分钟hexo装进docker
 urlname: docker-hexo
 date: 2018-12-13 15:49:02
-tags: 前端
+tags: 
+- 前端
+- 个人网站
+- Docker
+- 教程
 categories: 前端
 ---
 作为一个业余前端，为了写博客，只想关注内容而不是复杂的node环境和nmp依赖，因此把hexo装进docker成为了最好的选择。
@@ -67,4 +71,4 @@ docker run -it -d \
 ```
 
 ## 例子
-这个博客就是用这种方式部署到一个512MB的内存和11GB的存储空间的小机器上的。可以参考[https://github.com/zhouzhaoping/blog](https://github.com/zhouzhaoping/blog)
+这个博客就是用这种方式部署到一个512MB的内存和11GB的存储空间的小机器上的。可以参考[https://github.com/zhouzhaoping/blog](https://github.com/zhouzhaoping/blog)。以这个为基础搭建个人网站的教程请移步：[个人网站搭建](http://blog.zhouzhaoping.com/Tools/build-your-own-website/)

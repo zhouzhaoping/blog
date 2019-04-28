@@ -2,7 +2,9 @@
 title: hexo进阶——配置优化及插件使用
 urlname: hexo-config
 date: 2018-12-14 11:25:43
-tags: 前端
+tags: 
+- 前端
+- 个人网站
 categories: 前端
 ---
  在上一篇文章[十分钟hexo装进docker](http://blog.zhouzhaoping.com/Frontend/docker-hexo/)里，我们搞定了docker部署hexo的方式，但是默认样式总是不能让人满意，于是接下来继续折腾。

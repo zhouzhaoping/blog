@@ -11,8 +11,22 @@ categories: 后端
 
 <!-- more -->
 
+## 从面向对象到Go
+### 泛型
+1. interface{}
+2. 反射
+
+### 函数重载
+
+## 编译优化
+
+## 竞态检查
+
 ## 日志
 spring生产环境中使用logback作为日志模块，golang里有没有对应的包能提供类似的日志分割的功能呢？找到一个logrus，https://www.jishuwen.com/d/2Ek8
+Hook模式
+
+## 错误处理
 
 ## 单元测试
 

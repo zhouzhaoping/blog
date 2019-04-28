@@ -3,11 +3,11 @@ title: Eureka Client 从源码到轮子
 urlname: eureka-client-for-golang
 date: 2018-12-18 14:49:24
 tags:
-- 后端
+- 中间件
 - Golang
 - Eureka
 - Spring
-categories: 后端
+categories: 中间件
 ---
 最近在给公司的内容服务做性能优化，经过调研选择用go语言重构，但是由于go语言下没有一个好用的EurekaClient，所以自己造了一个轮子[eurekaclient](https://github.com/zhouzhaoping/eurekaclient)
 

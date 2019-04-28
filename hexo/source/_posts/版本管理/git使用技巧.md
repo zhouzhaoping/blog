@@ -4,6 +4,7 @@ urlname: git-tips
 date: 2019-01-17 17:02:37
 tags: 
 - Git
+- 版本管理
 - 笔记
 categories: 版本管理
 ---
