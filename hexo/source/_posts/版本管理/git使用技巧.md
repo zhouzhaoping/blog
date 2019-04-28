@@ -48,5 +48,20 @@ git fetch --all
 git reset --hard origin/master   
 git pull
 
+## git pull 报错
+error: Your local changes to the following files would be overwritten by merge:  
+原因：本地修改还没上传就pull了
+1. 想保存原来的修改：
+    ```
+    git stash
+    git pull origin master
+    git stash pop
+    ```
+2. 覆盖本地代码
+    ```
+    git reset --hard
+    git pull origin master
+    ```
+    
 ## 自学git命令的网站
 [https://learngitbranching.js.org/](https://learngitbranching.js.org/)
