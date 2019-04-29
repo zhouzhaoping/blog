@@ -24,11 +24,11 @@ categories:
 
 ## 名字来源
 Linus说过：
-    
-    Talk is cheap. Show me the code
-我在网上看到一个有意思的翻译：
+> Talk is cheap. Show me the code
 
-    空谈误国，代码兴邦
+我在网上看到一个有意思的翻译：
+> 空谈误国，代码兴邦
+
 于是想到了马兴邦这个笔名，上网一搜，没想到确有其人。于是退而求其次，**码兴邦**这个博客名就这么来了。
 
 ## 后续计划
