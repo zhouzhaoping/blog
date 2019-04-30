@@ -11,6 +11,10 @@ categories: 版本管理
 这是git使用时的一些tips，方便日后查询。
 <!-- more -->
 
+## add
+同时对删除文件进行操作  
+`git add --all`
+
 ## 创建与合并分支
 先创建并切换分支
 ```bash
