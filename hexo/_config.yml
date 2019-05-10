@@ -68,6 +68,7 @@ category_map:
   笔记: Note
   比赛: Competition
   工具: Tools
+  投资: Investment
 
 tag_map:
   日记: Diary
@@ -82,6 +83,7 @@ tag_map:
   笔记: Note
   比赛: Competition
   工具: Tools
+  投资: Investment
   读后感: Book-review
   黑客马拉松: Hackaton
   个人网站: Personal-Website
