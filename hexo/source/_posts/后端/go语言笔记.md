@@ -8,7 +8,7 @@ tags:
 - 笔记
 categories: 后端
 ---
-这是Golang使用时的一些tips。
+这是Golang使用时的一些tips。Go 语言是一个基于 CSP （Communicating sequential processes，通信顺序进程）模型原生支持并发的语言
 <!-- more -->
 
 ## 数组切片
