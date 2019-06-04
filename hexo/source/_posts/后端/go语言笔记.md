@@ -8,7 +8,9 @@ tags:
 - 笔记
 categories: 后端
 ---
-Go是强类型的语言，任何严肃的软件项目都不应该选择使用弱类型语言。这是Golang使用时的一些tips。
+
+Go是强类型的语言，任何严肃的软件项目都不应该选择使用弱类型语言。Go 语言是一个基于 CSP （Communicating sequential processes，通信顺序进程）模型原生支持并发的语言.这是Golang使用时的一些tips。
+
 <!-- more -->
 
 ## 数组切片
