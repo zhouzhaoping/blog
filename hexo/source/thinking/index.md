@@ -5,6 +5,8 @@ type: "thinking"
 comments: false
 ---
 ## 2019
+【2019.05.19】行成于思毁于随。
+【2019.05.17】When you perceive choice, you perceive motivation.
 【2019.05.12】狮子不会因为听到狗吠而回头。
 【2019.05.10】Information is money.
 【2019.05.08】不给自己设限，避免能力陷阱
