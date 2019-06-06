@@ -5,8 +5,13 @@ type: "thinking"
 comments: false
 ---
 ## 2019
+<<<<<<< HEAD
 【2019.06.06】折磨我们的往往都是想象,而不是真实
 【2019.05.29】太舒服的事情，是危险的
+=======
+【2019.05.19】行成于思毁于随。
+【2019.05.17】When you perceive choice, you perceive motivation.
+>>>>>>> 64b8ffc9c5679e3bdaed221d47f0af1a963b4e2f
 【2019.05.12】狮子不会因为听到狗吠而回头。
 【2019.05.10】Information is money.
 【2019.05.08】不给自己设限，避免能力陷阱

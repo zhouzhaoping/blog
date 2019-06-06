@@ -12,6 +12,7 @@ categories: 后端
 <!-- more -->
 
 ## 从面向对象到Go
+Go的interface能满足90%以上的OOP需求，但又没有C++的种种陷阱；执行速度足够快。
 ### 泛型
 1. interface{}
 2. 反射
