@@ -79,7 +79,7 @@ public aspect MyAspectJDemo {
     }
 }
 ```
-Spring AOP的内部机制（动态织入），这是与AspectJ（静态织入，一般在编译期进行）不一样的。pring AOP 并不尝试提供完整的AOP功能(即使它完全可以实现)，Spring AOP 更注重的是与Spring IOC容器的结合，并结合该优势来解决横切业务的问题。
+Spring AOP的内部机制（动态织入），这是与AspectJ（静态织入，一般在编译期进行）不一样的。Spring AOP 并不尝试提供完整的AOP功能(即使它完全可以实现)，Spring AOP 更注重的是与Spring IOC容器的结合，并结合该优势来解决横切业务的问题。
 
 ## SpringMVC
 **SpringMVC**，是Spring的一个子框架。MVC为现代web项目开发的一种很常见的模式，-简言之C（控制器Controller）将V（视图、用户客户端View）与M（模块，业务Model）分开构成了MVC ，业内常见的mvc模式的开发框架有Struts1，Struts2等。

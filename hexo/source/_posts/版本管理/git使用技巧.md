@@ -16,6 +16,16 @@ categories: 版本管理
 `git add --all`
 
 ## 创建与合并分支
+查看分支
+```bash
+$ git branch -r #查看远程分支
+$ git branch -a  #查看所有分支
+```
+克隆线上分支
+```bash
+$ git checkout -t origin/2.0.0 #已经 clone了 master分支
+$ git clone -b test https://github.xxxx.git #如果尚未克隆，那么
+```
 先创建并切换分支
 ```bash
 $ git branch dev // 创建
