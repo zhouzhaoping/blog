@@ -1,0 +1,18 @@
+{
+  "server": "68.168.133.152",
+  "local_address": "127.0.0.1",
+  "local_port": 1080,
+  "port_password": {
+    "6666": "richsoft",
+    "2333": "hanliang",
+    "8381": "ipad",
+    "8383": "phone",
+    "8384": "sohu",
+    "8385": "pickme",
+    "8386": "centos",
+    "8387": "backup"
+  },
+  "timeout": 300,
+  "method": "aes-256-cfb",
+  "fast_open": false
+}

@@ -179,6 +179,7 @@ pprof工具
 1. 减少临时对象
 2. 循环并发
 3. 编译优化
+go tool compile -S main.go 
 
 ## 线程debug
 
