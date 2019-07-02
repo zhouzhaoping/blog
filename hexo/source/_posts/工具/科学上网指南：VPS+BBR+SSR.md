@@ -136,5 +136,12 @@ linux：cow作为客户端
 # vim ~/.cow/rc 
 listen = http://0.0.0.0:7777
 proxy = ss://aes-128-cfb:password@1.2.3.4:8388
+# export http_proxy=http://127.0.0.1:7777
+# export https_proxy=http://127.0.0.1:7777
 ```  
+windows命令行：
+```bash
+# set http_proxy=127.0.0.1:1080
+# set https_proxy=127.0.0.1:1080
+```
 
