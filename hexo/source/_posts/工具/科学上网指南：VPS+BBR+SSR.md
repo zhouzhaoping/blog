@@ -130,7 +130,7 @@ chmod +x shadowsocksR.sh
 ### 客户端使用
 电脑：chrome安装switchomega插件配合ss客户端  
 手机：ss手机版客户端    
-ios：sockrocket?  
+ios：shadowrocket    
 linux：cow作为客户端
 ```
 # vim ~/.cow/rc 
