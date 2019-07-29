@@ -169,6 +169,8 @@ goroutine_id
 https://liudanking.com/performance/golang-%E8%8E%B7%E5%8F%96-goroutine-id-%E5%AE%8C%E5%85%A8%E6%8C%87%E5%8D%97/
 
 ## 错误处理
+不是所有panic都能被捕获
+recover
 
 ## 单元测试
 
@@ -184,3 +186,7 @@ go tool compile -S main.go
 ## 线程debug
 
 ## 循环引用
+
+
+## 提高并发度
+https://blog.csdn.net/Jeanphorn/article/details/79018205
