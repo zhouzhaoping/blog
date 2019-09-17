@@ -30,6 +30,7 @@ $ git clone -b test https://github.xxxx.git #如果尚未克隆，那么
 ```bash
 $ git branch dev // 创建
 $ git checkout dev // 切换
+$ git push origin dev:dev // 上传新建的分支
 Switched to branch 'dev'
 ```
 此时修改当前分支，并且进行提交
@@ -40,7 +41,7 @@ $ git commit -m "branch test"
 ```bash
 $ git checkout master
 Switched to branch 'master'
-$ git merge dev
+$ git merge dev（也可以制定版本号）
 ```
 删除开发分支
 ```bash
@@ -77,5 +78,13 @@ error: Your local changes to the following files would be overwritten by merge:
     git pull origin master
     ```
     
+## 不小心修改主分支
+在主分支上， 新建分支  
+git branch feature/new  
+舍弃主分支上的修改  
+git reset --hard  
+进入已保存的新分支  
+git checkout feature/new 
+
 ## 自学git命令的网站
 [https://learngitbranching.js.org/](https://learngitbranching.js.org/)
