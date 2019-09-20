@@ -93,4 +93,13 @@ git checkout feature/new
 ```bash
 git config --global http.proxy 'socks5://127.0.0.1:10808'
 git push
+
+# 取消代理
+git config --global --unset http.proxy 
+git config --global --unset https.proxy 
+```
+
+## 查看所有配置
+```bash
+git config --global --list
 ```

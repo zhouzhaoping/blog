@@ -68,4 +68,6 @@ systemctl restart nginx
 使用流量转发之后，小站正常的流量（blog.zhouzhaoping.com)和翻墙的流量（v2ray.zhouzhaoping.com）就互不干扰了。
 
 ## 其它疑问
-当前ip被封怎么远程的问题依然没有解决，假如运营商没有提供在线远程功能那我们这台机器就废了
+当前ip被封怎么远程的问题依然没有解决，假如运营商没有提供在线远程功能那我们这台机器就废了  
+ios端暂时没有很好的连接方案  
+[最新翻墙教程](https://program-think.blogspot.com/2019/06/gfw-news.html)
