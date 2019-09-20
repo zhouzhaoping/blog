@@ -88,3 +88,9 @@ git checkout feature/new
 
 ## 自学git命令的网站
 [https://learngitbranching.js.org/](https://learngitbranching.js.org/)
+
+## 代理下使用git
+```bash
+git config --global http.proxy 'socks5://127.0.0.1:10808'
+git push
+```
