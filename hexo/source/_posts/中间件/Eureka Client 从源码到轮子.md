@@ -16,7 +16,7 @@ categories: 中间件
 ## 什么是Eureka
 服务注册和发现是微服务体系的一个重要的部分，Eureka就是Netflix开源的一款提供服务注册和发现的产品，并且提供了相应的Java客户端。此外Spring Cloud Zookeeper、Spring Cloud Consul和Spring Cloud etcd都可以用于服务治理或服务发现。
 下图是Eureka的基本架构
-![Alt text](http://pjwvhuyq6.bkt.clouddn.com/eureka-architecture-overview.png)
+![eureka-architecture-overview](/images/eureka-architecture-overview.png)
 
 如上图Eureka有三种角色:
 1. Eureka Server:注册发现中心的实例
@@ -29,7 +29,7 @@ categories: 中间件
 2. Eureka Client for Provider:服务提供者进行服务注册、续约、下线
 3. Eureka Client for Consumer:服务消费者获取注册信息
 
-![Alt text](https://raw.githubusercontent.com/Netflix/eureka/master/images/eureka_architecture.png)
+![eureka_architecture](/images/eureka_architecture.png)
 
 ## Eureka REST 操作
 参考[官方wiki](https://github.com/Netflix/eureka/wiki/Eureka-REST-operations)  

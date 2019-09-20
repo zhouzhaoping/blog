@@ -41,10 +41,16 @@ comments: false
             - Oct,2018~Nov,2018
         - 推荐引擎Kaleidoscope
             - Service Integration
-            - Dec,2018~now
+            - Dec,2018~Jan,2019
         - 文章中台存储KV系统Trove
             - 系统设计+实现+部署+调优
             - Mar,2019~now
+        - 资讯类产品Trace
+            - 算法+后端
+            - 14,Apr,2019
+        - 文章页及其相关服务
+            - 维护和改进
+            - Aug,2019~now
  
 # Skills & Endorsements
 - language：golang/java/c/c++/python

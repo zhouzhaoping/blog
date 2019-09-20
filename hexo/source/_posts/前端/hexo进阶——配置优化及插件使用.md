@@ -635,6 +635,11 @@ var _hmt = _hmt || [];
 <br><img src="http://latex.codecogs.com/gif.latex?J(\theta)=\frac1{2m}(X\theta-Y)^T(X\theta-Y)=\frac1{2m}(\theta^TX^T-Y^T)(X\theta-Y)"/>
 ```
 ### 图床
+
+#### 本地
+1. 图片放在source/images中
+2. 文章内使用方式：```![](/images/image.jpg)```
+
 #### github
 也可以选择github的issue作为图床
 1. 创建一个新issue
@@ -646,5 +651,7 @@ var _hmt = _hmt || [];
 1. 打开对象存储，新建存储空间
 2. 点开刚才新建的空间，在内容管理里上传文件
 3. 把外链域名粘贴到markdown里
+
+***2019.9.18七牛云的羊毛不能再撸了，要求使用备案的域名才能使用图床，于是直接使用hexo的本地目录先作为暂时解决方案***
 
 ### https://imgur.com/

@@ -171,8 +171,8 @@ message object <==protobuf序列化== []byte <==jdkSerializer== XXX <==读出== 
 
 由于读写操作都使用了默认的相同配置，系统一直正常运行，因此没有出现任何问题。
 看了一下文档果然提到了这个问题
-![Alt text](http://pjwvhuyq6.bkt.clouddn.com/20181218121049.png)
-![Alt text](http://pjwvhuyq6.bkt.clouddn.com/20181218121318.png)
+![文档1](/images/spring-data-redis-serialization1.png)
+![文档2](/images/spring-data-redis-serialization2.png)
 
 ## 解决问题
 发现bug之后，修正配置变得特别方便，最主要的困难是线上数据的清洗
