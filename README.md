@@ -32,3 +32,9 @@ docker run -it -d \
     hexo-docker \
     hexo s
 ```
+
+## docker出问题重启
+```bash
+systemctl stop docker.service
+systemctl start docker.service
+```

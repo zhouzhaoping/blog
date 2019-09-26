@@ -27,3 +27,5 @@ categories: 后端
 如果是Maven遇到不能刷新本地依赖的话，需要做两件事情：
 1. 到~/.m2下，看看jar包路径是不是带有”.lastUpdated”，有的话就删除之。
 2. 带参数强制刷新mvn build -U
+
+## 调优
