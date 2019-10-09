@@ -655,3 +655,34 @@ var _hmt = _hmt || [];
 ***2019.9.18七牛云的羊毛不能再撸了，要求使用备案的域名才能使用图床，于是直接使用hexo的本地目录先作为暂时解决方案***
 
 ### https://imgur.com/
+
+
+## 表格
+### markdown表格
+```markdown
+  | 资产 | 负债 | 股东权益 | 
+  | ----- | ------ | ------ |
+ | 在建工程 | 贷款 | 股本 | 
+```
+
+### 插入html代码
+使用raw是为了避免渲染时插入br标签
+```html
+    {% raw %}  
+    <table>
+    <thead>
+    <tr>
+    <th>资产</th>
+    <th>负债</th>
+    <th>股东权益</th>
+    </tr>
+    </thead>
+    <tbody><tr>
+    <td>在建工程</td>
+    <td>贷款</td>
+    <td>股本</td>
+    </tr>
+    </tbody></table>
+    {% endraw %}  
+```
+[markdown表格转html](https://marked.js.org/demo)
