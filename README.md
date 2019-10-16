@@ -16,6 +16,14 @@ cd $work_path/hexo
 hexo new "My New Post"
 ```
 
+## 清除缓存
+```bash
+docker run -it \
+    -v $work_path/hexo:/Hexo \
+   hexo-docker \
+   hexo clean
+```
+
 ## 本地gen
 ```bash
 docker run -it \

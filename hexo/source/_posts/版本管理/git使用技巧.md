@@ -103,3 +103,8 @@ git config --global --unset https.proxy
 ```bash
 git config --global --list
 ```
+
+## 修改git地址
+```bash
+git remote set-url origin git@code.sohuno.com:mp-recommend/wap-article.git
+```

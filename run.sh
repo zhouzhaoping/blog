@@ -6,7 +6,7 @@ work_path=$(dirname $(readlink -f $0))
 docker run -it \
     -v $work_path/hexo:/Hexo \
     hexo-docker \
-    hexo g
+    hexo clean && hexo g
 
 # 预览
 docker run -it -d \
