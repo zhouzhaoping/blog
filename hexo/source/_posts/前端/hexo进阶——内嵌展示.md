@@ -147,3 +147,7 @@ Any content (support inline tags too).
 {% endcodeblock %}
 ```
 
+## fontawesome
+1. 注意版本问题，4.7以下的都能在https://fontawesome.com/v4.7.0/icons/搜到  
+2. config里面添加cdn:https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css
+3. ***如何升级***

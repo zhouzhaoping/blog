@@ -10,7 +10,7 @@ tags:
 categories: 后端
 ---
 
-最近发现公司持续集成的部署方式（可视化配置出dockerfile）实在太不可控，于是自己写了一个dockerfile两步构建spring boot。
+最近发现公司持续集成的构建方式（可视化配置出dockerfile）实在太不可控，于是自己写了一个dockerfile两步构建spring boot。
 <!-- more -->
 
 ## Dockerfile
@@ -60,7 +60,7 @@ wap-article                   latest               a77312d39b1d        10 hours 
 **进程的优雅退出（Gracefully Exiting）** 对服务来说是一件很重要的事情，但是只要正确捕捉SIGTERM 等信号一般都不会有什么大问题，但是在容器中会出现一些不可预料的结果。  
 在一个容器启动的时候，CMD 或者 ENTRYPOINT 里定义的命令会作为容器的主进程（main process）启动，pid 为 1，一旦主进程退出了，容器也会被销毁，容器内其他进程会被 kernel 直接 kill。shell 来启动程序，有时候会是后台进程，如果 shell 退出会导致子进程全部退出，应该会是个大麻烦。  
 我们在docker中有时候会用shell来启动程序，但是shell不转发signals同时还不响应退出信号。因为 kernel 会为每个进程加上默认的 signal handler，例外的是 pid=1 的进程，被 kernel 当作一个 init 角色，不会给他加上默认的 handler，可如果在容器中启动 shell，占据了 pid=1 的位置，这个容器就无法正常退出了，只能等 docker 引擎在超时后强行杀死进程。信号并没有被很好的处理和传递，孤儿僵尸进程没有被正确的收割。    
-假如我们使用[dumb-init](https://github.com/Yelp/dumb-init)来启动java，作为容器中的主进程，那它在收到退出信号的时候，会将退出信号转发给进程组所有进程。
+假如我们使用[dumb-init](https://github.com/Yelp/dumb-init)作为预启动钩子，启动java程序，那作为容器中的主进程，当它在收到退出信号的时候，会将退出信号转发给进程组所有进程。
 ```dockerfile
 # 安装dumb-init
 RUN wget  --no-check-certificate -O /usr/bin/dumb-init https://github.com/Yelp/dumb-init/releases/download/v1.2.2/dumb-init_1.2.2_amd64

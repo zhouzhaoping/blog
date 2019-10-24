@@ -138,7 +138,7 @@ exturl: true
 menu:
   home: / || home
   about: /about/ || user
-  thinking: /thinking/ || lightbulb
+  thinking: /thinking/ || lightbulb-o
   tags: /tags/ || tags
   categories: /categories/ || th
   archives: /archives/ || archive
@@ -186,7 +186,7 @@ social:
   #YouTube: https://youtube.com/yourname || youtube
   Instagram: https://instagram.com/fisher11allen || instagram
   #Skype: skype:yourname?call|chat || skype
-  Telegram: http://t.me/fisherallan || telegram
+  Telegram: http://t.me/fisherallan || phone
 
 social_icons:
   enable: true
@@ -963,7 +963,7 @@ vendors:
   # Example:
   # fontawesome: //cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css
   # fontawesome: //cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css
-  fontawesome: https://cdn.bootcss.com/font-awesome/4.6.2/css/font-awesome.min.css
+  fontawesome: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css
 
   # Internal version: 2.4.1
   # See: https://www.algolia.com
