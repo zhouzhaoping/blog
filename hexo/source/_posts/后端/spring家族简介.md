@@ -89,6 +89,16 @@ Spring Framework本身没有Web功能，Spring MVC使用WebApplicationContext类
 
 ## Spring Boot
 Spring系列经过发展之后，产品变多，为了简化spring作为基础架构的项目，Spring-boot把以前的手动配置的过程自动化封装了，提供默认的配置。Spring boot对第三方技术进行了很好的封装和整合，提供了大量第三方接口，可以通过依赖自动配置，不需要XML等配置文件。按照规范去配置，让我们把精力放在开发上。  
+Spring Boot就是一个内嵌Web服务器（tomcat/jetty）的可执行程序的框架:
+1. 通过starter和依赖管理解决依赖问题。
+2. 通过自动配置，解决配置复杂问题。
+3. 通过内嵌web容器，由应用启动tomcat，而不是tomcat启动应用，来解决部署运行问题。  
+
+在spring boot启动的时候我们就能看到以下两条信息，可以发现spring boot里面集成了tomcat：
+```
+org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 10020 (http)
+```
 缺点是集成度较高，使用过程中不太容易了解底层；依赖果多，启动过慢。  
 [SpringBoot 究竟是如何跑起来的?](https://mp.weixin.qq.com/s?__biz=MzAwMDU1MTE1OQ==&mid=2653550562&idx=1&sn=6a2e2b48845f09f426b46a2650737a29&chksm=813a667ab64def6cd6561e641e6160d549cd11a417d3262121fab9de05e5326e2fa7ffe9dc77&scene=21#wechat_redirect)
 

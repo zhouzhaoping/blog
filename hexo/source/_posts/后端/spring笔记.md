@@ -19,7 +19,7 @@ categories: 后端
 ## 运行时找不到bean
 工程添SpringBootApplication加注解
 ```java
-@ComponentScan(basePackages = {"com.sohu"})
+@ComponentScan(basePackages = {"com.zzp"})
 ```
 
 ## 依赖包强更新
@@ -28,4 +28,41 @@ categories: 后端
 1. 到~/.m2下，看看jar包路径是不是带有”.lastUpdated”，有的话就删除之。
 2. 带参数强制刷新mvn build -U
 
-## 调优
+## 分层领域模型规约：
+1. DO（ Data Object）：与数据库表结构一一对应，通过DAO层向上传输数据源对象。
+2. DTO（ Data Transfer Object）：数据传输对象，Service或Manager向外传输的对象。
+3. BO（ Business Object）：业务对象。 由Service层输出的封装业务逻辑的对象。
+4. AO（ Application Object）：应用对象。 在Web层与Service层之间抽象的复用对象模型，极为贴近展示层，复用度不高。
+5. VO（ View Object）：显示层对象，通常是Web向模板渲染引擎层传输的对象。
+6. POJO（ Plain Ordinary Java Object）：在本手册中， POJO专指只有setter/getter/toString的简单类，包括DO/DTO/BO/VO等。
+7. Query：数据查询对象，各层接收上层的查询请求。 注意超过2个参数的查询封装，禁止使用Map类来传输。
+
+领域模型命名规约：
+1. 数据对象：xxxDO，xxx即为数据表名。
+2. 数据传输对象：xxxDTO，xxx为业务领域相关的名称。
+3. 展示对象：xxxVO，xxx一般为网页名称。
+4. POJO是DO/DTO/BO/VO的统称，禁止命名成xxxPOJO。
+
+## Cacheable
+报错`java.lang.Integer cannot be cast to java.lang.String`
+redis中key不能将Integer强制转化为String类型。转化为字符串必须通过String.valueOf(integer) 或者Integer.toString(integer)或者Integer.toString():
+```java
+ redisTemplate.setKeySerializer(stringRedisSerializer());
+```
+如何解决？直接强改`#authorId + ''`数字转字符串
+```java
+@Cacheable(
+            cacheManager = "redisCacheManager",
+            value = "wapAuthorTopArticles",
+            key = "#authorId + ''",
+            unless = "#result == null"
+    )
+```
+
+## Jackson
+转换泛型List出现错误[`java.util.LinkedHashMap cannot be cast to com.xxx`](https://stackoverflow.com/questions/22358872/how-to-convert-linkedhashmap-to-custom-java-object/22359030)，解决方法：
+```java
+import com.fasterxml.jackson.databind.ObjectMapper;
+private ObjectMapper mapper = new ObjectMapper();
+List<ConsultantDto> myObjects = mapper.readValue(jsonInput, new TypeReference<List<ConsultantDto>>(){});
+```

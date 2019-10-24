@@ -125,3 +125,25 @@ option = {
 };
 {% endecharts %}
 
+## Tab 标签
+使用方式
+```markdown
+{% tabs [Unique name], [index] %}
+<!-- tab [Tab caption]@[icon] -->
+Any content (support inline tags too).
+<!-- endtab -->
+{% endtabs %}
+```
+说明  
+1. Unique name 为每个标签页组唯一的名称
+2. index 为初始激活的标签页
+3. Tab caption 为标签页名称，不指定时为所属标签页组名称加索引
+4. icon 为 Font awesome图标，可选。
+
+注意：tab里面放代码块要使用下面的语法
+```markdown
+{% codeblock lang:bash %}
+# ps -ef
+{% endcodeblock %}
+```
+

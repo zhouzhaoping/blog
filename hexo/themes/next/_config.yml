@@ -138,7 +138,7 @@ exturl: true
 menu:
   home: / || home
   about: /about/ || user
-  thinking: /thinking/ || think-peaks
+  thinking: /thinking/ || lightbulb
   tags: /tags/ || tags
   categories: /categories/ || th
   archives: /archives/ || archive
@@ -963,7 +963,7 @@ vendors:
   # Example:
   # fontawesome: //cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css
   # fontawesome: //cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css
-  fontawesome:
+  fontawesome: https://cdn.bootcss.com/font-awesome/4.6.2/css/font-awesome.min.css
 
   # Internal version: 2.4.1
   # See: https://www.algolia.com
