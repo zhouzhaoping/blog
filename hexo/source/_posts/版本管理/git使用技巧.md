@@ -59,9 +59,11 @@ git commit --amend
 ``` 
 
 ## Git pull 强制覆盖本地文件
+```bash
 git fetch --all   
 git reset --hard origin/master   
 git pull
+```
 
 ## git pull 报错
 error: Your local changes to the following files would be overwritten by merge:  
