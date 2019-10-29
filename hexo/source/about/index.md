@@ -9,6 +9,7 @@ comments: false
 
 # Personal
  - male/1993 
+ - Blog：[https://blog.zhouzhaoping.com](https://blog.zhouzhaoping.com)
  - Github：[https://github.com/zhouzhaoping](https://github.com/zhouzhaoping)
  - Mail：[zhouzhaoping11@gmail.com](mailto:zhouzhaoping11@gmail.com)
  - 兴趣：系统设计，中间件，机器学习，宏观经济，量化交易
@@ -58,7 +59,7 @@ comments: false
 - back-end：grpc/spring boot/nginx/zend framework
 - database：MySQL/Redis/Codis
 - machine learning: sklearn
-- version management, documentation：Svn/Git/markdown
+- tool：Docker/Svn/Git/markdown
 
 # Hobby
 - Soccer

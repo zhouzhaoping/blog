@@ -129,3 +129,5 @@ ln -s cc ccTo :符号链接(软链接)；删除源，另一个无法使用；（
     
 ## 文本处理
 
+https://github.com/jaywcjlove/linux-command
+
