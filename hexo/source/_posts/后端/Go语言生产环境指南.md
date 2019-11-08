@@ -12,6 +12,51 @@ categories: 后端
 
 <!-- more -->
 
+参考：https://draveness.me/golang-101.html
+
+## 代码规范
+https://github.com/golang/go/wiki/CodeReviewComments
+### 面向接口
+通过接口暴露接口
+```go
+package post
+
+type Service interface {
+    ListPosts() ([]*Post, error)
+}
+
+type service struct {
+    conn *grpc.ClientConn
+}
+
+func NewService(conn *grpc.ClientConn) Service {
+    return &service{
+        conn: conn,
+    }
+}
+
+func (s *service) ListPosts() ([]*Post, error) {
+    posts, err := s.conn.ListPosts(...)
+    if err != nil {
+        return []*Post{}, err
+    }
+    
+    return posts, nil
+}
+```
+
+## 目录结构
+https://github.com/golang-standards/project-layout、
+
+
+## 辅助工具
+- 格式化：goimports = gofmt（自动格式化） + import（依赖包管理）
+- 静态检查：golint + golangci-lint
+- 自动化：
+    - 在 GitHub 上我们可以使用 Travis CI 或者 CircleCI
+    - 在 Gitlab 上我们可以使用 Gitlab CI
+ 
+    
 ## 从面向对象到Go
 Go的interface能满足90%以上的OOP需求，但又没有C++的种种陷阱；执行速度足够快。
 ### 泛型
@@ -171,10 +216,15 @@ goroutine_id
 https://liudanking.com/performance/golang-%E8%8E%B7%E5%8F%96-goroutine-id-%E5%AE%8C%E5%85%A8%E6%8C%87%E5%8D%97/
 
 ## 错误处理
-不是所有panic都能被捕获
-recover
+- if err != nil { return nil, err } 
+- 不是所有panic都能被捕获
+- recover
 
 ## 单元测试
+- _test.go
+- Suite
+- BDD
+- Mock 方法
 
 ## 压测
 

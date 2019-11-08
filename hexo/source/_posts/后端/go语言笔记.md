@@ -162,6 +162,7 @@ fmt.Println(foo5.age)
 import _ "image/png"
 ```
 
-
-
+## defer
+- panic或者return的时候会执行defer语句
+- 优先执行最后注册的defer函数
 
