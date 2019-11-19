@@ -332,6 +332,7 @@ reward:
   comment: Buy Me a Coffee
   wechatpay: /images/wechatpay.png
   alipay: /images/alipay.jpg
+  bitcoin: /images/mixinpay.jpg
   #bitcoin: /images/bitcoin.png
 
 # Related popular posts

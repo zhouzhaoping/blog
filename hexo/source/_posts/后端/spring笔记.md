@@ -66,3 +66,15 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 private ObjectMapper mapper = new ObjectMapper();
 List<ConsultantDto> myObjects = mapper.readValue(jsonInput, new TypeReference<List<ConsultantDto>>(){});
 ```
+
+## Spring Bean 生命周期
+http://winshu.tk/article/27
+
+## 事物
+事物的特性（ACID）
+1. 原子性： 事务是最小的执行单位，不允许分割。事务的原子性确保动作要么全部完成，要么完全不起作用；
+2. 一致性： 执行事务前后，数据保持一致；
+3. 隔离性： 并发访问数据库时，一个用户的事物不被其他事物所干扰，各并发事务之间数据库是独立的；
+4. 持久性:  一个事务被提交之后。它对数据库中数据的改变是持久的，即使数据库发生故障也不应该对其有任何影响。
+
+## 分布式锁

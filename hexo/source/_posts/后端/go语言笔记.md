@@ -166,3 +166,19 @@ import _ "image/png"
 - panic或者return的时候会执行defer语句
 - 优先执行最后注册的defer函数
 
+## 闭包
+闭包是由函数和与其相关的引用环境组合而成的实体。
+```go
+func incr() func() int {
+	var x int
+	return func() int {
+		x++
+		return x
+	}
+}
+
+i := incr()
+println(i()) // 1
+println(i()) // 2
+println(i()) // 3
+```
