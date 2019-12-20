@@ -34,7 +34,8 @@ categories: 后端
 
 ## 登陆
 ```bash
-redis-cli -h your_ip -p your_port -a your_password
+redis-cli -h your_ip -p your_port -a your_password -c
+// -c为集群模式
 ```
 
 ## 基本信息
@@ -81,3 +82,13 @@ redis-cli -c -h 10.18.36.141 -p 6390 -a 35ff9e22 --rdb ~/dump.rdb // 把dump.rdb
 rdb -c memory /path/to/your/dump.rdb --bytes 10240 --type string > result.csv // 找到redis中的string类型的大key（大于10240）
 ```
 
+## List
+```bsah
+rpush mylist a b c // 插入：如果指定的key不存在，则先创建一个空列表
+lrange mylist 0 -1 // 分页：[start, stop]中的元素；上下标会帮忙容错
+lrem key count value // 去除
+llen key // 长度
+```
+
+## 过期
+EXPIRE key seconds

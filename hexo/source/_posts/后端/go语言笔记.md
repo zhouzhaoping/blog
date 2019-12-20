@@ -182,3 +182,21 @@ println(i()) // 1
 println(i()) // 2
 println(i()) // 3
 ```
+
+## 反射
+
+```go
+// 1. 从接口值可反射出反射对象
+author := "draven"
+reflect.TypeOf(author)   // string
+reflect.ValueOf(author)) // draven
+
+// 2. 从反射对象可反射出接口值
+v := reflect.ValueOf(1)
+v.Interface{}.(int)
+
+// 3. 要修改反射对象，其值必须可设置
+i := 1
+v := reflect.ValueOf(&i)
+v.Elem().SetInt(10)
+```

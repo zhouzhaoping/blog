@@ -98,6 +98,7 @@ tag_map:
   Git: Git
   Python: Python
   Nginx: Nginx
+  Java: Java
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
