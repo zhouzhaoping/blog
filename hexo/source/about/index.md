@@ -52,6 +52,12 @@ comments: false
         - 文章页及其相关服务
             - 维护和改进
             - Aug,2019~now
+        - 作者页
+            - 维护与迭代
+            - Aug,2019~Nov,2019
+        - 中台重构
+            - 负责feedservice模块，实现流管理
+            - Nov,2019~now
  
 # Skills & Endorsements
 - language：golang/java/c/c++/python

@@ -25,4 +25,28 @@ Java8已经发布五年了，但是有的人用着JDK8但写的还是八年前�
     ```
 5. 通过Stream 暴露集合的最大优点在于，它很好地封装了内部实现的数据结构。仅暴露一个Stream接口，用户在实际操作中无论如何使用，都不会影响内部的List或Set。
 6. 高阶函数：接收函数作为参数
-7. 无论何时，将Lambda 表达式传给Stream 上的高阶函数，都应该尽量避免副作用（式获取值而不是变量；使用局部变量，可以不使用final 关键字，但局部变量在既成事实上必须是final 的。唯一的例外是forEach 方法，它是一个终结方法。
+7. 无论何时，将Lambda 表达式传给Stream 上的高阶函数，都应该尽量**避免副作用**（式获取值而不是变量；使用局部变量，可以不使用final 关键字，但局部变量在既成事实上必须是final 的。唯一的例外是forEach 方法，它是一个终结方法。
+
+## 类库
+1. 为了减小装箱类型的性能开销，Stream 类的某些方法对基本类型和装箱类型做了区分。在Java 8 中，仅对Int、Long、Double做了特殊处理，因为它们在数值计算中用得最多，特殊处理后的系统性能提升效果最明显。
+    ```java
+    stream.mapToLong/mapToInt/MapToDouble
+    IntSummaryStatistics trackLengthStats = album.getTracks().stream()
+    .mapToInt(track -> track.getLength())
+    .summaryStatistics(); // 数值统计
+    ```
+2. 虽然Java 在持续演进，但它一直在保持着向后二进制兼容。
+3. Java8在增加Collection的stream方法之后，核心类库里的类为了兼容二进制所做的努力：ArrayList增加stream方法
+4. 默认方法三定律
+    ```java
+    public interface Parent {
+    public void message(String body);
+    public default void welcome() {
+    message("Parent: Hi!");
+    }
+    public String getLastMessage();
+    }
+    ```
+    1. 类胜于接口。如果在继承链中有方法体或抽象的方法声明，那么就可以忽略接口中定义的方法。
+    2. 子类胜于父类。如果一个接口继承了另一个接口，且两个接口都定义了一个默认方法，那么子类中定义的方法胜出。
+    3. 没有规则三。如果上面两条规则不适用，子类要么需要实现该方法，要么将该方法声明为抽象方法。
