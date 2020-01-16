@@ -4,6 +4,9 @@ date: 2018-12-15 02:54:45
 type: "thinking"
 comments: false
 ---
+## 2020
+【2020.01.14】In the long run we are all dead.——凯恩斯  
+
 ## 2019
 【2019.12.10】每个人来到这个世界，都有自己注定要实现的天命，无论你是谁，无论你要什么，当你真心渴望一样东西，整个宇宙都会合力来帮你的忙。  
 【2019.12.03】done is better than perfect  

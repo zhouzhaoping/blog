@@ -50,3 +50,16 @@ Java8已经发布五年了，但是有的人用着JDK8但写的还是八年前�
     1. 类胜于接口。如果在继承链中有方法体或抽象的方法声明，那么就可以忽略接口中定义的方法。
     2. 子类胜于父类。如果一个接口继承了另一个接口，且两个接口都定义了一个默认方法，那么子类中定义的方法胜出。
     3. 没有规则三。如果上面两条规则不适用，子类要么需要实现该方法，要么将该方法声明为抽象方法。
+5. Optional对象：使用null 代表值不存在的最大问题在于NullPointerException
+    ```java
+    Optional<String> a = Optional.of("a");
+    if (a.isPresent())// 先调用isPresent再调用get
+       a.get();    
+    Optional<String> b = Optional.ofNullable(null);
+    String str1 = b.orElse("default");
+    String str2 = b.orElseGet(() -> {return "defualt2";});
+    ```
+
+## 高级集合类和收集器
+1. 流是否保持顺序排列和集合是否有序相关
+2. 
