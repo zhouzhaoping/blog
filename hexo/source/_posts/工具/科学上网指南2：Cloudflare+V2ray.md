@@ -54,7 +54,8 @@ windows：推荐[V2RayN](https://github.com/2dust/v2rayN/releases)，下载core�
 2. 点开参数设置，查看监听端口，例如10808
 3. 使用chrome安装的switchomega插件把相关请求转发到10808端口
 
-Android：推荐V2RayNG
+Android：推荐V2RayNG  
+IOS：Shadowrocket，假如国区安装不了可以选择上网下载ipa文件，然后用一些同步助手的工具同步到ipad中。配置混淆的时候记得在路径的下面一行加入域名。
 
 ## 流量转发
 vps上的v2ray监听的是`29616`，而我们翻墙时访问的是`v2ray.zhouzhaoping.com:80`，所以我们还需要用nginx转发相关请求。  

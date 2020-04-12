@@ -5,7 +5,9 @@ type: "thinking"
 comments: false
 ---
 ## 2020
-【2020.01.14】In the long run we are all dead.——凯恩斯  
+【2020.01.29】If your heroes are right，you are lucky  
+【2020.01.26】任何一项创新都是成本和利润的博弈  
+【2020.01.14】In the long run we are all dead.——凯恩斯
 
 ## 2019
 【2019.12.10】每个人来到这个世界，都有自己注定要实现的天命，无论你是谁，无论你要什么，当你真心渴望一样东西，整个宇宙都会合力来帮你的忙。  

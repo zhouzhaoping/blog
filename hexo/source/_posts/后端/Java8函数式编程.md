@@ -62,4 +62,9 @@ Java8已经发布五年了，但是有的人用着JDK8但写的还是八年前�
 
 ## 高级集合类和收集器
 1. 流是否保持顺序排列和集合是否有序相关
-2. 
+2. 数据分块
+    ```java
+    Map<Artist, Long> numberOfAlbums = albums.stream().collect(groupingBy(Album::getMusician, counting()));// 计数
+    Map<Artist, List<Album>> nameOfAlbums0 = albums.stream().collect(groupingBy(Album::getMusician));
+    Map<Artist, List<String>> nameOfAlbums = albums.stream().collect(groupingBy(Album::getMusician, mapping(Album::getName, toList())));
+   ```
