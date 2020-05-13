@@ -12,5 +12,6 @@ docker run -it \
 docker run -it -d \
     -p 4000:4000 \
     -v $work_path/hexo:/Hexo \
+    --restart=always \
     hexo-docker \
     hexo s
