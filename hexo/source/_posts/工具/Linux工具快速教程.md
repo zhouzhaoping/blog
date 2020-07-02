@@ -129,5 +129,30 @@ ln -s cc ccTo :符号链接(软链接)；删除源，另一个无法使用；（
     
 ## 文本处理
 
+
+## 文件传输
+```bash
+nc -l -4 1234 > filename.tar #send
+nc -4 1.1.1.1 1234 < filename.tar #receive
+```
+
+## 后台运行
+```bash
+nohup cmd &
+```
+
+## 压缩解压缩
+```bash
+tar zcvf trove-test.tar.gz trove-test #压缩
+tar -xvf trove-test.tar.gz #解压
+```
+
+## 查询之前输入命令行
+ctrl + R
+
+## 进入用户
+```bash
+su - mediamw
+```
 https://github.com/jaywcjlove/linux-command
 
