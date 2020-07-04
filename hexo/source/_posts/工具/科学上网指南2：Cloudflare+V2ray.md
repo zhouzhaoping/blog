@@ -57,6 +57,8 @@ windows：推荐[V2RayN](https://github.com/2dust/v2rayN/releases)，下载core�
 Android：推荐V2RayNG  
 IOS：Shadowrocket，假如国区安装不了可以选择上网下载ipa文件，然后用一些同步助手的工具同步到ipad中。配置混淆的时候记得在路径的下面一行加入域名。
 
+IOS：shadowrocket可以继续使用，但国区下不了，所以只能上网找ipa文件再用同步助手之类的工具安装
+
 ## 流量转发
 vps上的v2ray监听的是`29616`，而我们翻墙时访问的是`v2ray.zhouzhaoping.com:80`，所以我们还需要用nginx转发相关请求。  
 1. 增加配置文件`/etc/nginx/conf.d/vpn.conf` 
