@@ -5,6 +5,7 @@ type: "thinking"
 comments: false
 ---
 ## 2020
+【2020.09.28】一个人最可怕的，就是不断重复自己
 【2020.05.29】永远年轻，永远好奇
 【2020.04.24】根深蒂固的成功，更有其脆弱之处
 【2020.01.29】If your heroes are right，you are lucky  

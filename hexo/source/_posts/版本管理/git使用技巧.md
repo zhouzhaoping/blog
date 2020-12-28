@@ -119,3 +119,10 @@ git remote set-url origin git@code.sohuno.com:mp-recommend/wap-article.git
 4. git stash apply [–index] [stash_id] 除了不删除恢复的进度之外，其余和git stash pop 命令一样。
 5. git stash drop [stash_id] 删除一个存储的进度。如果不指定stash_id，则默认删除最新的存储进度。
 6. git stash clear：删除所有存储的进度。
+
+### 修改错分支，未提交
+```bash
+git stash
+git checkout dev
+git stash pop
+```
