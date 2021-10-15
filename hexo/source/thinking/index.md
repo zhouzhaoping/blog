@@ -5,6 +5,8 @@ type: "thinking"
 comments: false
 ---
 ## 2021
+【2021.10.13】There is so much mis-information in the world that if you believe everything you read, you will be quite poor.
+【2021.09.27】You don't live their life,don't judge.
 【2021.07.21】只应对，不预测
 【2021.05.04】即使是一堆垃圾在一起，也会形成垃圾之间的鄙视链
 【2021.06.09】相关性不等于因果性
