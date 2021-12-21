@@ -5,6 +5,9 @@ type: "thinking"
 comments: false
 ---
 ## 2021
+【2021.12.13】世界上最亏本的事，就是为尚未发生的事担心
+【2021.12.08】薅羊毛不是为了省钱而是为了提供情绪价值
+【2021.12.03】信仰一旦出现真空，怪力乱神就来了；认知一旦出现真空，流量变现就来了。
 【2021.10.13】There is so much mis-information in the world that if you believe everything you read, you will be quite poor.
 【2021.09.27】You don't live their life,don't judge.
 【2021.07.21】只应对，不预测
