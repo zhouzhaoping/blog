@@ -126,3 +126,13 @@ git stash
 git checkout dev
 git stash pop
 ```
+
+### 代码回滚
+1. 已push
+    ```bash
+    git revert
+    ```
+2. 已commit，未push
+    ```bash
+    git reset
+    ``` 
