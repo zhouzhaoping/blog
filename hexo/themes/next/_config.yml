@@ -177,16 +177,16 @@ site_state: true
 social:
   GitHub: https://github.com/zhouzhaoping || github
   E-Mail: mailto:zhouzhaoping11@gmail.com || envelope
-  Weibo: https://weibo.com/2290298424 || weibo
+  #Weibo: https://weibo.com/2290298424 || weibo
   #Google: https://plus.google.com/yourname || google
-  Twitter: https://twitter.com/FisherAllen11 || twitter
-  FB Page: https://www.facebook.com/fisherallan11 || facebook
+  #Twitter: https://twitter.com/FisherAllen11 || twitter
+  #FB Page: https://www.facebook.com/fisherallan11 || facebook
   #VK Group: https://vk.com/yourname || vk
   #StackOverflow: https://stackoverflow.com/yourname || stack-overflow
   #YouTube: https://youtube.com/yourname || youtube
-  Instagram: https://instagram.com/fisher11allen || instagram
+  #Instagram: https://instagram.com/fisher11allen || instagram
   #Skype: skype:yourname?call|chat || skype
-  Telegram: http://t.me/fisherallan || phone
+  #Telegram: http://t.me/fisherallan || phone
 
 social_icons:
   enable: true
