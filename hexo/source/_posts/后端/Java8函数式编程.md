@@ -19,8 +19,8 @@ Java8已经发布五年了，但是有的人用着JDK8但写的还是八年前�
 4. reduce模式，reduce是max、min的通用模式
     ```java
     Object accumulator = initialValue;
-    for(Object element : collection) {
-    accumulator = combine(accumulator, element);
+    for(Object element : collection) {   
+       accumulator = combine(accumulator, element);
     }
     ```
 5. 通过Stream 暴露集合的最大优点在于，它很好地封装了内部实现的数据结构。仅暴露一个Stream接口，用户在实际操作中无论如何使用，都不会影响内部的List或Set。
@@ -32,17 +32,17 @@ Java8已经发布五年了，但是有的人用着JDK8但写的还是八年前�
     ```java
     stream.mapToLong/mapToInt/MapToDouble
     IntSummaryStatistics trackLengthStats = album.getTracks().stream()
-    .mapToInt(track -> track.getLength())
-    .summaryStatistics(); // 数值统计
+       .mapToInt(track -> track.getLength())
+       .summaryStatistics(); // 数值统计
     ```
 2. 虽然Java 在持续演进，但它一直在保持着向后二进制兼容。
 3. Java8在增加Collection的stream方法之后，核心类库里的类为了兼容二进制所做的努力：ArrayList增加stream方法
 4. 默认方法三定律
     ```java
     public interface Parent {
-    public void message(String body);
-    public default void welcome() {
-    message("Parent: Hi!");
+       public void message(String body);
+       public default void welcome() {
+       message("Parent: Hi!");
     }
     public String getLastMessage();
     }
